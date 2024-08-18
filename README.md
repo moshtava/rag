@@ -11,6 +11,7 @@
 
 
 ## Installation not using docker
+
 1. Clone the repository:
 
 `git clone https://github.com/moshtava/rag.git`
@@ -37,7 +38,7 @@
 Open your browser and go to http://127.0.0.1:8000/docs to see the Swagger documentation.
 
 ## Using Docker Compose
-1. docker-compose.yml file is set up like the following:
+1. make sure docker-compose.yml file is set up like the following:
 
 ```
 version: '3.8'
@@ -75,6 +76,7 @@ qdrant_data:
 ```
 
 *note* 
+
 use .env file to store values of api_key environment variable. value for hf_token is setby me and it's correct. so, don't need to change it:
 
 `API_KEY=your_api_key_value`
@@ -85,7 +87,10 @@ use .env file to store values of api_key environment variable. value for hf_toke
 
 `docker-compose up`
 
+
 ### Usage
+
+
 •  Submit a question:
 
 Use the /ask endpoint to submit a question and receive an answer based on the embedded data.
