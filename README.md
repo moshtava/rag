@@ -42,7 +42,8 @@ Open your browser and go to http://127.0.0.1:8000/docs to see the Swagger docume
 ## Using Docker Compose
 1. docker-compose.yml file is set up like the following:
 
-`version: '3.8'
+```
+version: '3.8'
 
 services:
 app:
@@ -74,7 +75,8 @@ volumes:
 
 volumes:
 qdrant_data:
-`
+```
+
 *note* 
 use .env file to store values of api_key environment variable. value for hf_token is setby me and it's correct. so, don't need to change it:
 
