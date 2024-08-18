@@ -1,4 +1,5 @@
 ### Prerequisites
+
 •  Python 3.8+
 
 •  FastAPI
@@ -6,37 +7,34 @@
 •  Qdrant (or another vector database)
 
 ## Installation not using and using docker
+
+
 ## Installation not using docker
-1. 
-Clone the repository:
+1. Clone the repository:
 
-git clone <repository-link>
-cd <repository-directory>
+git clone https://github.com/moshtava/rag.git
+cd rag
 
-1. 
-Create a virtual environment:
+2. Create a virtual environment:
 
 python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+`source venv/bin/activate`  # On Windows use `venv\Scripts\activate`
 
-1. 
-Install the dependencies:
+3. Install the dependencies:
 
 pip install -r requirements.txt
 
 Running the API
-1. 
-Start the FastAPI server:
+1. Start the FastAPI server:
 
 uvicorn main:app --reload
 
-1. 
-Access the API documentation:
+2. Access the API documentation:
+
 Open your browser and go to http://127.0.0.1:8000/docs to see the Swagger documentation.
 
 ##Using Docker Compose
-1. 
-docker-compose.yml file is set up like the following:
+1. docker-compose.yml file is set up like the following:
 
 version: '3.8'
 
@@ -71,14 +69,12 @@ volumes:
 volumes:
 qdrant_data:
 
-1. 
-use .env file to store values of api_key environment variable. value for hf_token is setby me and it's correct. so, don't need to change it:
+*note* use .env file to store values of api_key environment variable. value for hf_token is setby me and it's correct. so, don't need to change it:
 
 API_KEY=your_api_key_value
 HF_TOKEN=your_hf_token_value
 
-1. 
-Run Docker Compose:
+1. Run Docker Compose:
 
 docker-compose up
 
