@@ -1,5 +1,6 @@
 ### Prerequisites
 
+
 •  Python 3.8+
 
 •  FastAPI
@@ -11,6 +12,7 @@
 
 ## Installation not using docker
 1. Clone the repository:
+
 `git clone https://github.com/moshtava/rag.git`
 
 `cd rag`
